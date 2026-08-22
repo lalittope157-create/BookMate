@@ -1,0 +1,1173 @@
+.personal-library {
+    min-height: 100vh;
+    background: #050816;
+    color: #f8fafc;
+    padding-bottom: 80px;
+}
+
+
+/* ==========================================
+   HERO
+========================================== */
+
+.library-hero {
+    min-height: 440px;
+
+    padding: 65px 7%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    position: relative;
+
+    overflow: hidden;
+
+    background:
+        radial-gradient(
+            circle at 15% 30%,
+            rgba(124,58,237,.25),
+            transparent 35%
+        ),
+        radial-gradient(
+            circle at 85% 70%,
+            rgba(245,158,11,.15),
+            transparent 30%
+        ),
+        #080d1c;
+}
+
+
+.library-hero-content {
+    max-width: 650px;
+
+    position: relative;
+
+    z-index: 2;
+}
+
+
+.library-label {
+    display: inline-block;
+
+    padding: 9px 15px;
+
+    border-radius: 30px;
+
+    border: 1px solid rgba(167,139,250,.3);
+
+    background: rgba(124,58,237,.1);
+
+    color: #c4b5fd;
+
+    font-size: 11px;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 20px;
+}
+
+
+.library-hero h1 {
+    font-size: clamp(42px, 5vw, 68px);
+
+    line-height: 1;
+
+    margin: 0;
+
+    letter-spacing: -2px;
+}
+
+
+.library-hero h1 span {
+    display: block;
+
+    background:
+        linear-gradient(
+            90deg,
+            #fbbf24,
+            #f97316,
+            #ec4899
+        );
+
+    -webkit-background-clip: text;
+
+    -webkit-text-fill-color: transparent;
+}
+
+
+.library-hero-content > p {
+    color: #94a3b8;
+
+    font-size: 17px;
+
+    line-height: 1.7;
+
+    max-width: 570px;
+
+    margin: 25px 0;
+}
+
+
+.discover-button {
+    padding: 13px 22px;
+
+    border: none;
+
+    border-radius: 11px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #7c3aed,
+            #2563eb
+        );
+
+    color: white;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: .3s;
+}
+
+
+.discover-button:hover {
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 15px 30px
+        rgba(124,58,237,.3);
+}
+
+
+/* ==========================================
+   BOOK STACK
+========================================== */
+
+.library-visual {
+    width: 380px;
+
+    height: 350px;
+
+    position: relative;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+}
+
+
+.stack-book {
+    width: 155px;
+
+    height: 230px;
+
+    position: absolute;
+
+    border-radius: 8px 15px 15px 8px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 50px;
+
+    box-shadow:
+        -8px 12px 0 rgba(0,0,0,.25),
+        0 25px 50px rgba(0,0,0,.4);
+}
+
+
+.stack-one {
+    background:
+        linear-gradient(
+            135deg,
+            #be123c,
+            #fb7185
+        );
+
+    transform:
+        rotate(-20deg)
+        translateX(-70px);
+}
+
+
+.stack-two {
+    background:
+        linear-gradient(
+            135deg,
+            #0369a1,
+            #38bdf8
+        );
+
+    transform:
+        rotate(-8deg)
+        translateX(-30px);
+}
+
+
+.stack-three {
+    background:
+        linear-gradient(
+            135deg,
+            #047857,
+            #34d399
+        );
+
+    transform:
+        rotate(8deg)
+        translateX(30px);
+}
+
+
+.stack-main {
+    background:
+        linear-gradient(
+            135deg,
+            #7c3aed,
+            #db2777
+        );
+
+    transform:
+        rotate(18deg)
+        translateX(70px);
+}
+
+
+/* ==========================================
+   STATS
+========================================== */
+
+.library-stat-grid {
+    padding: 35px 7%;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 18px;
+
+    background: #050816;
+}
+
+
+.library-stat-card {
+    padding: 20px;
+
+    background:
+        linear-gradient(
+            145deg,
+            rgba(30,41,59,.8),
+            rgba(15,23,42,.9)
+        );
+
+    border: 1px solid #1e293b;
+
+    border-radius: 16px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+    transition: .3s;
+}
+
+
+.library-stat-card:hover {
+    transform: translateY(-5px);
+
+    border-color: #475569;
+}
+
+
+.stat-card-icon {
+    width: 52px;
+    height: 52px;
+
+    border-radius: 14px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    font-size: 23px;
+}
+
+
+.stat-card-icon.purple {
+    background: rgba(124,58,237,.15);
+}
+
+
+.stat-card-icon.orange {
+    background: rgba(245,158,11,.15);
+}
+
+
+.stat-card-icon.pink {
+    background: rgba(236,72,153,.15);
+}
+
+
+.stat-card-icon.blue {
+    background: rgba(37,99,235,.15);
+}
+
+
+.library-stat-card strong {
+    display: block;
+
+    font-size: 24px;
+}
+
+
+.library-stat-card span {
+    color: #64748b;
+
+    font-size: 12px;
+}
+
+
+/* ==========================================
+   CONTROLS
+========================================== */
+
+.library-controls {
+    padding: 30px 7%;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    gap: 20px;
+
+    flex-wrap: wrap;
+}
+
+
+.library-search {
+    width: 350px;
+
+    height: 46px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    padding: 0 14px;
+
+    background: #0f172a;
+
+    border: 1px solid #1e293b;
+
+    border-radius: 12px;
+}
+
+
+.library-search span {
+    color: #64748b;
+}
+
+
+.library-search input {
+    flex: 1;
+
+    border: none;
+
+    outline: none;
+
+    background: transparent;
+
+    color: white;
+
+    font-size: 14px;
+}
+
+
+.library-search input::placeholder {
+    color: #64748b;
+}
+
+
+.library-search button {
+    border: none;
+
+    background: transparent;
+
+    color: #94a3b8;
+
+    cursor: pointer;
+}
+
+
+.category-filters {
+    display: flex;
+
+    gap: 7px;
+
+    flex-wrap: wrap;
+}
+
+
+.category-filters button {
+    padding: 9px 14px;
+
+    border-radius: 20px;
+
+    border: 1px solid #334155;
+
+    background: #0f172a;
+
+    color: #94a3b8;
+
+    cursor: pointer;
+
+    transition: .25s;
+}
+
+
+.category-filters button:hover {
+    color: white;
+
+    border-color: #64748b;
+}
+
+
+.category-filters button.active {
+    background:
+        linear-gradient(
+            135deg,
+            #7c3aed,
+            #2563eb
+        );
+
+    color: white;
+
+    border-color: transparent;
+}
+
+
+/* ==========================================
+   BOOK SECTION
+========================================== */
+
+.library-books-section {
+    padding: 20px 7% 80px;
+}
+
+
+.library-section-heading {
+    display: flex;
+
+    align-items: end;
+
+    justify-content: space-between;
+
+    margin-bottom: 30px;
+}
+
+
+.library-section-heading span {
+    color: #f59e0b;
+
+    font-size: 10px;
+
+    letter-spacing: 3px;
+
+    font-weight: 700;
+}
+
+
+.library-section-heading h2 {
+    margin: 8px 0 0;
+
+    font-size: 35px;
+}
+
+
+.library-section-heading > p {
+    color: #64748b;
+}
+
+
+/* ==========================================
+   BOOK GRID
+========================================== */
+
+.library-books-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 24px;
+}
+
+
+/* ==========================================
+   BOOK CARD
+========================================== */
+
+.library-book-card {
+    background: #0f172a;
+
+    border: 1px solid #1e293b;
+
+    border-radius: 20px;
+
+    overflow: hidden;
+
+    transition: .35s;
+
+    animation: bookAppear .5s ease both;
+}
+
+
+@keyframes bookAppear {
+
+    from {
+        opacity: 0;
+
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+
+        transform: translateY(0);
+    }
+
+}
+
+
+.library-book-card:hover {
+    transform: translateY(-8px);
+
+    border-color: #475569;
+
+    box-shadow:
+        0 25px 50px
+        rgba(0,0,0,.3);
+}
+
+
+/* ==========================================
+   COVER
+========================================== */
+
+.library-book-cover {
+    height: 260px;
+
+    position: relative;
+
+    padding: 25px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    text-align: center;
+
+    overflow: hidden;
+}
+
+
+.cover-0 {
+    background:
+        linear-gradient(
+            145deg,
+            #312e81,
+            #7c3aed,
+            #db2777
+        );
+}
+
+
+.cover-1 {
+    background:
+        linear-gradient(
+            145deg,
+            #164e63,
+            #0891b2,
+            #2563eb
+        );
+}
+
+
+.cover-2 {
+    background:
+        linear-gradient(
+            145deg,
+            #78350f,
+            #ea580c,
+            #f59e0b
+        );
+}
+
+
+.cover-3 {
+    background:
+        linear-gradient(
+            145deg,
+            #064e3b,
+            #059669,
+            #14b8a6
+        );
+}
+
+
+.cover-4 {
+    background:
+        linear-gradient(
+            145deg,
+            #4c1d95,
+            #9333ea,
+            #c026d3
+        );
+}
+
+
+.cover-glow {
+    width: 180px;
+
+    height: 180px;
+
+    position: absolute;
+
+    border-radius: 50%;
+
+    background: rgba(255,255,255,.1);
+
+    filter: blur(20px);
+
+    top: -70px;
+
+    right: -60px;
+}
+
+
+.cover-book-icon {
+    font-size: 45px;
+
+    position: relative;
+
+    z-index: 2;
+}
+
+
+.library-book-cover h3 {
+    font-size: 22px;
+
+    max-width: 240px;
+
+    position: relative;
+
+    z-index: 2;
+
+    margin: 15px 0 5px;
+}
+
+
+.library-book-cover p {
+    margin: 0;
+
+    font-size: 12px;
+
+    color: rgba(255,255,255,.75);
+
+    position: relative;
+
+    z-index: 2;
+}
+
+
+.cover-bottom {
+    position: absolute;
+
+    bottom: 15px;
+
+    font-size: 8px;
+
+    letter-spacing: 3px;
+
+    color: rgba(255,255,255,.55);
+}
+
+
+/* ==========================================
+   BOOK INFORMATION
+========================================== */
+
+.library-book-info {
+    padding: 20px;
+}
+
+
+.library-category {
+    display: inline-block;
+
+    padding: 5px 10px;
+
+    border-radius: 20px;
+
+    background: rgba(124,58,237,.12);
+
+    color: #a78bfa;
+
+    font-size: 10px;
+
+    margin-bottom: 10px;
+}
+
+
+.library-book-info h2 {
+    margin: 0;
+
+    font-size: 19px;
+
+    white-space: nowrap;
+
+    overflow: hidden;
+
+    text-overflow: ellipsis;
+}
+
+
+.library-author {
+    color: #94a3b8;
+
+    font-size: 13px;
+}
+
+
+.library-description {
+    color: #64748b;
+
+    line-height: 1.6;
+
+    font-size: 12px;
+
+    min-height: 40px;
+}
+
+
+/* ==========================================
+   PROGRESS
+========================================== */
+
+.reading-progress {
+    margin-top: 18px;
+}
+
+
+.progress-top {
+    display: flex;
+
+    justify-content: space-between;
+
+    font-size: 11px;
+
+    color: #64748b;
+
+    margin-bottom: 7px;
+}
+
+
+.progress-top strong {
+    color: #a78bfa;
+}
+
+
+.progress-bar {
+    height: 6px;
+
+    background: #1e293b;
+
+    border-radius: 10px;
+
+    overflow: hidden;
+}
+
+
+.progress-bar div {
+    height: 100%;
+
+    border-radius: 10px;
+
+    background:
+        linear-gradient(
+            90deg,
+            #7c3aed,
+            #ec4899
+        );
+}
+
+
+/* ==========================================
+   FOOTER
+========================================== */
+
+.library-card-footer {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    margin-top: 20px;
+}
+
+
+.library-rating {
+    color: #fbbf24;
+
+    font-size: 13px;
+}
+
+
+.library-card-footer button {
+    border: none;
+
+    background:
+        linear-gradient(
+            135deg,
+            #7c3aed,
+            #2563eb
+        );
+
+    color: white;
+
+    padding: 9px 15px;
+
+    border-radius: 9px;
+
+    cursor: pointer;
+
+    font-weight: 600;
+
+    transition: .25s;
+}
+
+
+.library-card-footer button:hover {
+    transform: translateX(3px);
+}
+
+
+/* ==========================================
+   EMPTY
+========================================== */
+
+.library-empty {
+    padding: 80px 20px;
+
+    text-align: center;
+
+    border: 1px dashed #334155;
+
+    border-radius: 20px;
+
+    background: rgba(15,23,42,.5);
+}
+
+
+.empty-icon {
+    font-size: 60px;
+
+    margin-bottom: 15px;
+}
+
+
+.library-empty h2 {
+    margin: 0 0 8px;
+}
+
+
+.library-empty p {
+    color: #64748b;
+}
+
+
+.library-empty button {
+    margin-top: 15px;
+
+    padding: 11px 20px;
+
+    border: none;
+
+    border-radius: 9px;
+
+    background: #7c3aed;
+
+    color: white;
+
+    cursor: pointer;
+}
+
+
+/* ==========================================
+   CTA
+========================================== */
+
+.library-cta {
+    margin: 0 7%;
+
+    padding: 45px;
+
+    border-radius: 25px;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    gap: 30px;
+
+    background:
+        radial-gradient(
+            circle at 90% 50%,
+            rgba(245,158,11,.18),
+            transparent 35%
+        ),
+        linear-gradient(
+            135deg,
+            #111827,
+            #1e1b4b
+        );
+
+    border: 1px solid #334155;
+}
+
+
+.library-cta > div span {
+    color: #f59e0b;
+
+    font-size: 10px;
+
+    letter-spacing: 3px;
+}
+
+
+.library-cta h2 {
+    font-size: 30px;
+
+    margin: 10px 0;
+}
+
+
+.library-cta h2 strong {
+    color: #a78bfa;
+}
+
+
+.library-cta p {
+    color: #64748b;
+
+    margin: 0;
+}
+
+
+.library-cta button {
+    padding: 13px 22px;
+
+    border: none;
+
+    border-radius: 10px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #f59e0b,
+            #ea580c
+        );
+
+    color: white;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    white-space: nowrap;
+
+    transition: .3s;
+}
+
+
+.library-cta button:hover {
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 12px 25px
+        rgba(245,158,11,.25);
+}
+
+
+/* ==========================================
+   LOADING
+========================================== */
+
+.library-loading {
+    min-height: 80vh;
+
+    background: #050816;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    color: white;
+}
+
+
+.library-loading p {
+    color: #64748b;
+}
+
+
+.library-spinner {
+    width: 45px;
+    height: 45px;
+
+    border: 4px solid #1e293b;
+
+    border-top-color: #8b5cf6;
+
+    border-radius: 50%;
+
+    animation:
+        librarySpin .8s linear infinite;
+
+    margin-bottom: 20px;
+}
+
+
+@keyframes librarySpin {
+
+    to {
+        transform: rotate(360deg);
+    }
+
+}
+
+
+/* ==========================================
+   RESPONSIVE
+========================================== */
+
+@media (max-width: 1000px) {
+
+    .library-hero {
+        text-align: center;
+
+        flex-direction: column;
+
+        padding: 60px 5%;
+    }
+
+
+    .library-hero-content > p {
+        margin-left: auto;
+
+        margin-right: auto;
+    }
+
+
+    .library-visual {
+        margin-top: 35px;
+    }
+
+
+    .library-stat-grid {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+
+    .library-books-grid {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+}
+
+
+@media (max-width: 650px) {
+
+    .library-hero h1 {
+        font-size: 43px;
+    }
+
+
+    .library-visual {
+        transform: scale(.8);
+
+        margin: -10px 0;
+    }
+
+
+    .library-stat-grid {
+        grid-template-columns: 1fr;
+
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+
+    .library-controls,
+    .library-books-section {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+
+    .library-search {
+        width: 100%;
+    }
+
+
+    .library-books-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    .library-section-heading {
+        align-items: flex-start;
+    }
+
+
+    .library-cta {
+        margin: 0 20px;
+
+        padding: 30px 22px;
+
+        flex-direction: column;
+
+        align-items: flex-start;
+    }
+
+}
